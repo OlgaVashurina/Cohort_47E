@@ -5,7 +5,7 @@ package lesson_16;
 */
 
 /*
-Написать класс Собака (HW17Dog).
+Написать класс Собака (HW_17Dog).
 
 Каждая Собака обязательно должна иметь имя и высоту прыжка ++
 
@@ -93,7 +93,7 @@ public class Dog {
     }
 
     public String toString() {
-        return "{Dog " + name + "; current jump: " + jumpHeight + "}";
+        return "{HW_17Dog " + name + "; current jump: " + jumpHeight + "}";
     }
 
     public String getName() {
