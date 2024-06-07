@@ -48,10 +48,8 @@ public class Dog {
             jump();
             return;
         }
-
         if (maxJump >= barrier) {
-            //может взять
-            //надо тренировать
+            //может взять //надо тренировать
             System.out.println(name + " идет тренироваться");
 
             while (jumpHeight < barrier) {
@@ -63,11 +61,9 @@ public class Dog {
         } else {
             System.out.printf("Барьер высотой %d собака %s взять не может. Текущий прыжок %d\n", barrier, name, jumpHeight);
         }
-
     }
 
     public void train() {
-
         if (jumpHeight < maxJump) {
             jumpHeight += INCREASE_PER_TRAINING;
         }
@@ -97,7 +93,7 @@ public class Dog {
     }
 
     public String toString() {
-        return "{HW17Dog " + name + "; current jump: " + jumpHeight + "}";
+        return "{Dog " + name + "; current jump: " + jumpHeight + "}";
     }
 
     public String getName() {
