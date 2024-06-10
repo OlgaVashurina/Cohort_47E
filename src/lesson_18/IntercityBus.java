@@ -46,16 +46,6 @@ public class IntercityBus extends Bus {
 
     public boolean dropOffPassengerWithBicycle() {
         // TODO реализовать метод
-
-        if (countBicycle > 0 && this.getCountPassengers() > 0) {
-
-            this.dropOffPassenger();
-            countBicycle--;
-            System.out.printf("Пассажир с велосипедом высажен из автобуса %s\n", this.getModel());
-            return true;
-        }
-
-        System.out.println(this.getModel() + ". Нет пассажиров с велосипедами для высадки!");
         return false;
     }
 
