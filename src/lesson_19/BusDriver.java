@@ -8,7 +8,7 @@ public class BusDriver {
         this.licenseNumber = licenseNumber;
     }
 
-    public String toString() {
+    public String toString(){
         StringBuilder sb = new StringBuilder("{ BusDriver: ");
         sb.append(licenseNumber).append("; bus:");
         sb.append(autobus != null ? autobus.getId() : " {out of bus}");

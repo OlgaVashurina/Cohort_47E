@@ -78,6 +78,7 @@ public class JR3 {
 
         Solution11();
     }
+
     /*
     Используя вложенные циклы while (цикл в цикле) выведи на экран прямоугольник размером 5 (высота) на 10 (ширина), заполненный буквой 'Q'.
 
@@ -103,6 +104,21 @@ public class JR3 {
         Solution12();
     }
 
+    /*Используя вложенные циклы while (цикл в цикле) выведи на экран незаполненный прямоугольник (его контур) размером 10 (высота) на 20 (ширина) из букв 'Б'.
+Незаполненная часть состоит из пробелов.
+Пример вывода:
+ББББББББББББББББББББ
+Б                  Б
+Б                  Б
+Б                  Б
+Б                  Б
+Б                  Б
+Б                  Б
+Б                  Б
+Б                  Б
+ББББББББББББББББББББ*/
+
+
     public static void Solution12() {
         int height = 1;
         while (height <= 10) {
@@ -120,6 +136,17 @@ public class JR3 {
             System.out.println();
             height++;
         }
+
+        NumberNumber1(new Scanner(System.in));
+    }
+
+    public static void NumberNumber1(Scanner scanner){
+        boolean isExit = false;
+        while (!isExit){
+            System.out.println("Введите 'Exit' для завершения: ");
+            String s = scanner.nextLine();
+            isExit = s.equalsIgnoreCase("Exit");
+        }
+        System.out.println("Введено 'Exit'. Программа завершена.");
     }
 }
-
